@@ -157,10 +157,12 @@
               if (data.response.location && data.response.location.length > 0) {
                 return r(data.response.location[0].prefecture);
               } else {
-                return nibun();
+                pop("位置情報ではわかんなかったのりゃ。");
+                return buttons(["次へ", nibun]);
               }
             } catch {
-              return nibun();
+              pop("なんかできなかったのりゃ。");
+              return buttons(["次へ", nibun]);
             }
           },
           () => {
