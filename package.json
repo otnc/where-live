@@ -1,0 +1,15 @@
+{
+  "name": "where-live",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "prettier": "^3.9.10"
+  }
+}
