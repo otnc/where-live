@@ -164,7 +164,8 @@
             }
           },
           () => {
-            return nibun();
+            pop("位置情報が使えなかったからわかんなかったのりゃ。");
+            return buttons(["次へ", nibun]);
           },
           { enableHighAccuracy: true, maximumAge: 0, timeout: 10000 },
         );
